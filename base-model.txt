@@ -16,7 +16,7 @@
 context C1
 
 sets
-    Union // Artifical set of all possible elements of the model
+    Union // Artificial set of all possible elements of the model
     Names // Set of all possible names for entities and roles
     Accesses // Set of all possible accesses
     AccessRights // Set of all possible access rights (permissions)
@@ -34,7 +34,7 @@ constants
     WriteA // Write access
     Read // Read access right
     Write // Write access right
-    Execute // Execute acess right
+    Execute // Execute access right
     Own // Own access right
     CommonRole // Role that is common for all user accounts
 
@@ -70,7 +70,7 @@ variables
     CurrUnion
     UserAccs // Set of all current user accounts
     Subjects // Set of all current subjects (processes)
-    Entities // Set of all current entities (files and file-like oobjects, directories)
+    Entities // Set of all current entities (files and file-like objects, directories)
     Objects // Set of all current objects (files), subset of Entities
     Containers // Set of all current containers (directories), subset of Entities
     Roles // Set of all current roles
@@ -80,7 +80,7 @@ variables
     EntityMP // Function. For a given entity returns its mount point in the file system
     EntityNames // Like function Parent below, but returns the name, under which the file is contained in the container, and the parent container itself.
     Parent // Function. Hierarchy of entities in the file system, for each entity except the root directory function returns its parent container.
-    RoleAdmRights // Function. Current access rights of admiadministrative roles to roles
+    RoleAdmRights // Function. Current access rights of administrative roles to roles
     RoleName // Function. Stores role names.
     RoleRights // Function. Current access rights of roles to entities
     RParents // Function. Hierarchy of roles, for each role returns the set of its parent roles.
